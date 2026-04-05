@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Reverse_Me</string>
+    <string name="Task"> Find the User Name and  Password </string>
+    <string name="Password">Searching</string>
+</resources>
