@@ -1,5 +1,5 @@
-Android Rev-Lab: A Beginner's Reverse Engineering Challenge
-Android Rev-Lab is a gamified Android application designed to teach the fundamentals of mobile reverse engineering. It consists of three distinct levels, each focusing on a different vulnerability or bypass technique commonly found in Android applications.
+DroidRev A Beginner's Reverse Engineering Challenge
+DroidRev is a gamified Android application designed to teach the fundamentals of mobile reverse engineering. It consists of three distinct levels, each focusing on a different vulnerability or bypass technique commonly found in Android applications.
 
 Built with Kotlin and Jetpack Compose, this app serves as a playground for aspiring security researchers to practice using tools like JADX, Apktool, and Smali modification.
 
