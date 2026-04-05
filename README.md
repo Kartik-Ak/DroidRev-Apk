@@ -4,6 +4,7 @@ DroidRev is a gamified Android application designed to teach the fundamentals of
 Built with Kotlin and Jetpack Compose, this app serves as a playground for aspiring security researchers to practice using tools like JADX, Apktool, and Smali modification.
 
 🚩 The Challenges
+
 Level 1: Hardcoded Secrets & Static Analysis
 The Setup: A standard login screen with two text fields (Username and Password).
 
