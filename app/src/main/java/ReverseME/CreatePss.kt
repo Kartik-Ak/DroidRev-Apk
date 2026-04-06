@@ -84,7 +84,7 @@ fun CreatePAss(cc: RView, navController: NavHostController){
                 navController.navigate("")
             }
             else{
-                Toast.makeText(context,"❌ Oops babes ",Toast.LENGTH_LONG)
+                Toast.makeText(context,"❌ Oops babes ",Toast.LENGTH_LONG).show()
             }
 
         },
