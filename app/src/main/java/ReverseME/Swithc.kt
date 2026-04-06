@@ -19,6 +19,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.Font
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -28,14 +30,16 @@ import com.example.reverse_me.R
 
 @Composable
 fun Screens(navController: NavController){
+    val f = FontFamily(Font(R.font.f1))
+    val s = FontFamily(Font(R.font.s1))
 Box(Modifier.fillMaxSize().background(color = Color.Black)){}
     Column(Modifier.fillMaxSize().padding(20.dp),
         horizontalAlignment = Alignment.CenterHorizontally){
 
         Spacer(Modifier.height(50.dp))
 
-       Text("Challenge 3 ", fontSize = 20.sp, fontWeight = FontWeight.Bold, color = Color.White)
-        Text("\nFind the Hidden Screen  ", fontSize = 16.sp, color = Color.White)
+       Text("Challenge 3 ", fontSize = 20.sp, fontWeight = FontWeight.Bold, color = Color.White, fontFamily = s)
+        Text("\nFind the Hidden Screen  ", fontSize = 16.sp, color = Color.White, fontFamily = f)
         Text("\nWe have left a message for you",fontSize = 16.sp, color = Color.White)
 
     }

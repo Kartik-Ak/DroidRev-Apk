@@ -24,6 +24,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.text.font.Font
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -33,7 +35,8 @@ import androidx.navigation.compose.rememberNavController
 
 @Composable
 fun CreatePAss(cc: RView, navController: NavHostController){
-
+    val f = FontFamily(Font(com.example.reverse_me.R.font.f1))
+    val s = FontFamily(Font(com.example.reverse_me.R.font.s1))
     var  x = 150;
 
     val context = LocalContext.current
@@ -46,9 +49,9 @@ fun CreatePAss(cc: RView, navController: NavHostController){
         horizontalAlignment = Alignment.CenterHorizontally
     ){
         Spacer(Modifier.height(30.dp))
-        Text("Challenge 2", fontSize = 20.sp, fontWeight = FontWeight.Bold, color = Color.White)
-        Text("\n Create your own Username and password", fontSize = 16.sp, color = Color.White)
-        Text("\nAlso change the value from 150 to 500",fontSize = 16.sp, color = Color.White)
+        Text("Challenge 2", fontSize = 20.sp, fontWeight = FontWeight.Bold, color = Color.White, fontFamily = s)
+        Text("\n Create your own Username and password", fontSize = 16.sp, color = Color.White, fontFamily = f)
+        Text("\nAlso change the value from 150 to 500",fontSize = 16.sp, color = Color.White, fontFamily = f)
 
 
     }

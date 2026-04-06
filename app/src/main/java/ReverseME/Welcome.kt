@@ -29,6 +29,8 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.layout.ModifierLocalBeyondBoundsLayout
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.Font
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -42,6 +44,8 @@ fun Loginme(
     view: RView,
     navcontroller: NavHostController
 ){
+    val f = FontFamily(Font(R.font.f1))
+    val s = FontFamily(Font(R.font.s1))
 
     Column(Modifier.fillMaxSize().background(
         brush = Brush.verticalGradient(
@@ -57,9 +61,9 @@ fun Loginme(
         val  mypass  = stringResource(R.string.Password)
 
 
-        Text("\nChallenge 1 ", fontSize = 22.sp, color = Color.White, fontWeight = FontWeight.Bold)
+        Text("\nChallenge 1 ", fontSize = 22.sp, color = Color.White, fontWeight = FontWeight.Bold, fontFamily = s)
               Spacer(Modifier.height(15.dp))
-        Text(stringResource(R.string.Task), fontSize = 20.sp,color=Color.White)
+        Text(stringResource(R.string.Task), fontSize = 20.sp,color=Color.White, fontFamily = f)
 
         Column(Modifier.fillMaxSize(),
             verticalArrangement = Arrangement.Center,
@@ -141,6 +145,8 @@ fun Mytext(
 
 @Composable
 fun HiddenScreen(){
+    val f = FontFamily(Font(R.font.f1))
+    val s = FontFamily(Font(R.font.s1))
     Box(Modifier.fillMaxSize()){
         Image(painter = painterResource(R.drawable.news),
             contentDescription = "null",
@@ -149,7 +155,7 @@ fun HiddenScreen(){
 
         Column(Modifier.fillMaxSize().padding(30.dp),
             horizontalAlignment = Alignment.CenterHorizontally) {
-            Text("\nMission Successful", fontWeight = FontWeight.Bold, fontSize = 20.sp, color = Color.White)
+            Text("\nMission Successful", fontWeight = FontWeight.Bold, fontSize = 24.sp, color = Color.White, fontFamily = s )
 
 
             Column(Modifier.fillMaxSize().padding(20.dp),
@@ -171,9 +177,9 @@ fun HiddenScreen(){
             horizontalAlignment = Alignment.CenterHorizontally) {
 
             val message = message()
-            Spacer(Modifier.height(50.dp))
-            Text(message.ss, fontSize = 16.sp, color = Color.White)
-            Text(message.f, fontSize = 16.sp, color = Color.White)
+            Spacer(Modifier.height(80.dp))
+            Text(message.ss, fontSize = 14.sp, color = Color.White, fontFamily = f)
+            Text(message.f, fontSize = 14.sp, color = Color.White, fontFamily = f)
         }
 
     }
